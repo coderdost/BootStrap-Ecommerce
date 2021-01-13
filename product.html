@@ -24,71 +24,41 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">E-shopper</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="/">E-shopper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Account</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Account</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Cameras</a></li>
-                <li><a class="dropdown-item" href="#">Apple Gadgets</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Drones</a></li>
+                <li><a class="dropdown-item" href="/#products">Cameras</a></li>
+                <li><a class="dropdown-item" href="/#products">Apple Gadgets</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/#products">Drones</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                > <i class="bi bi-cart-plus-fill"></i>
-                 Cart</a
-              >
+              <a class="nav-link" href="/cart.html" tabindex="-1">
+                <i class="bi bi-cart-plus-fill"></i>Cart <span class="badge bg-success">4</span></a>
             </li>
           </ul>
           <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">Search</button>
           </form>
         </div>
       </div>
     </nav>
+    <!-- End of Navigation -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb p-3">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -109,11 +79,11 @@
         
             <div class="col-md-5">
                 <h6>Brand</h6>
-                <h2>Product Name</h2>
-                <h5>Price $</h5>
-                <div>Color</div>
-                <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i>
-                    Add to Cart</button>
+                <h2>Product Name </h2>
+                <h5>Price : $100</h5>
+                <div>Color : Red</div>
+                <button class="btn btn-primary" onclick="showToast()"><i class="bi bi-cart-plus-fill"></i>
+                    Add to Cart </button>
                 <div>Details
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -191,5 +161,14 @@
         </div>
       </div>
     </div>
+       <!-- End of Footer -->
+       <div class="toast d-flex align-items-center text-white bg-primary border-0 position-fixed" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          Item is successfully added to your cart.
+        </div>
+        <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <!-- End of Toast -->
+      <script src="app.js"></script>
   </body>
 </html>

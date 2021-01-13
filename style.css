@@ -13,6 +13,7 @@ div{
     max-width: 300px;
     margin: auto;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 .product-item img{  
       /* max-height: 200px; */
@@ -52,4 +53,18 @@ div{
 }
 .success-icon{
     font-size: 10rem;
+}
+#carouselExampleDark img{
+    max-height: 90vh;
+}
+
+.toast{
+    top:-50px;
+}
+.toast.show{
+    top:0px ;
+}
+a.logo{
+    text-decoration: none;
+    color: black;
 }

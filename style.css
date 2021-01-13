@@ -15,15 +15,29 @@ div{
     margin-bottom: 2rem;
     cursor: pointer;
 }
+
+.product-item:hover{
+    transform: scale(1.1);
+}
 .product-item img{  
       /* max-height: 200px; */
     }
     
-.footer-items{
-    color: #ccc
+.footer-items h5{
+    color: white;
+    font-size: 1rem;
 }
 .footer-items ul{
-    list-style: square;
+    list-style: none;
+    padding: 0;
+    font-size: 0.8rem;
+}
+.footer-items a{
+    color:#ccc;
+    text-decoration: none;
+}
+.footer-items a:hover{
+    text-decoration: underline;
 }
 
 .breadcrumb{
@@ -85,4 +99,47 @@ a.dropdown-item{
 }
 a.dropdown-item:hover{ 
     color: rgb(31, 26, 26) !important;
+ }
+
+.carousel-caption{
+    background-color: #ffffff66;
+} 
+.card-text.price{
+  color: rgb(255, 111, 0);
+}
+.like,.liked{
+    z-index: 10;
+    top: 1rem;
+    left: 2rem;
+    font-size: 2rem;
+    color: grey;  
+}
+.liked {
+  opacity: 0;
+  z-index: 11;
+}
+.like:hover{
+    opacity: 0;
+}
+.liked:hover{
+    color: red;
+    opacity: 1;
+}
+.subscribe input, .subscribe button{
+ border-radius: 0;
+}
+.social-icons i{
+   font-size: 1.5rem;
+   width: 24px;
+   height: 24px;
+}
+.social-icons i:before{
+    vertical-align: text-top;
+    top: -0.2rem;
+    position: relative;
+ }
+.social-icons button{
+    border-radius: 50% !important;
+    width: 2.5rem;
+    height: 2.5rem;
  }

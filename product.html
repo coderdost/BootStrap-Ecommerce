@@ -32,14 +32,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Account</a>
-            </li>
+            
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="/#products">Cameras</a></li>
                 <li><a class="dropdown-item" href="/#products">Apple Gadgets</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -48,13 +46,30 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/cart.html" tabindex="-1">
-                <i class="bi bi-cart-plus-fill"></i>Cart <span class="badge bg-success">4</span></a>
+                Cart<i class="bi bi-cart-plus-fill"></i> 
+                <span class="cart-badge badge bg-success">4</span></a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">Search</button>
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-2 order-sm-last">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="myaccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Account
+              </a>
+              <ul class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Orders</a></li>
+                <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex search-form">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">
+              <i class="bi bi-search"></i>
+            </button>
           </form>
+         
         </div>
       </div>
     </nav>

@@ -68,3 +68,21 @@ a.logo{
     text-decoration: none;
     color: black;
 }
+.cart-badge{
+    position: relative;
+    top:-15px;
+    left:-10px;
+}
+.search-form input, .search-form button{
+    border-radius: 0;
+}
+.nav-item:hover{
+    background-color: #ffffff33;
+}
+a.dropdown-item{ 
+   color: white !important;
+   text-decoration: none;
+}
+a.dropdown-item:hover{ 
+    color: rgb(31, 26, 26) !important;
+ }

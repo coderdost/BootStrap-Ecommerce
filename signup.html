@@ -34,16 +34,33 @@
         <div class="d-flex justify-content-center">
            
 
-            <div class="login-box m-auto mt-5 col-4 text-center">
+            <div class="login-box m-auto mt-5 col-4">
               <h3 class="text-center">Sign Up</h3>
-              <form action="">
-                    <input type="text" class="form-control m-2" placeholder="Full Name">
-                    <input type="email" class="form-control m-2" placeholder="Email">
-                    <input type="password" class="form-control m-2" placeholder="password">
-                    <input type="password" class="form-control m-2" placeholder="confirm password">
-
-                    <input type="submit" class="form-control btn-success m-2" value="Create Account">
-                </form>
+              <form class="needs-validation" novalidate="" action="">
+                <div>
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" placeholder="Full Name" required="">
+                  <div class="invalid-feedback">
+                    Name required
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="Email" required="">
+                  <div class="invalid-feedback">
+                    Valid Email required
+                  </div>
+                </div>
+                <div>
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" placeholder="password" required="" minlength="6">
+                  <div class="invalid-feedback">
+                    Valid Password required (min 6 chars)
+                  </div>
+                </div>
+        
+                  <input type="submit" class="form-control btn-success" value="Create Account">
+              </form>
                 <a href="/login.html"> Have an account? Login Here</a>
 
             </div>
@@ -84,5 +101,7 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
+
   </body>
 </html>

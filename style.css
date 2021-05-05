@@ -164,11 +164,6 @@ a.dropdown-item:hover{
    width: 24px;
    height: 24px;
 }
-.social-icons i:before{
-    vertical-align: text-top;
-    top: -0.2rem;
-    position: relative;
- }
 .social-icons button{
     border-radius: 50% !important;
     width: 2.5rem;

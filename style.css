@@ -163,6 +163,7 @@ a.dropdown-item:hover{
    font-size: 1.5rem;
    width: 24px;
    height: 24px;
+   margin-top :-0.8rem;
 }
 .social-icons button{
     border-radius: 50% !important;
